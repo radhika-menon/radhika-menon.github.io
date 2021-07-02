@@ -1,0 +1,22 @@
+body{
+    background-image:linear-gradient(to right, rgba(240, 106, 45, 0.473), rgba(228, 216, 165, 0));
+    /*background-color: rgb(247, 239, 224);*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  #main-heading{
+    /*display:inline;
+    
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 60%;
+    
+    */
+    display: inline;
+    font-family: cursive;
+    font-size: 1.8em;
+    padding:1vh 2vw 1vh 2vw;
+    border-style:solid #00f;
+  }
