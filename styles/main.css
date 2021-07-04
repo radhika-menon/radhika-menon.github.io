@@ -53,4 +53,36 @@ body{
     width:60%;
   }
 
+.post-buttons{
+  margin:5%;
+} 
 
+  .clickable-img {
+    display: inline-block;
+    background-color: #dd5281;
+    padding:1%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+.clickable-img-caption {
+    background-color: #dd5281;
+    color: #e3ffe7;
+    font: italic smaller sans-serif;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding:1%;
+}
+
+.post-date{
+  font-style: italic;
+  font-size:smaller;
+  margin-top:10px;
+}
+
+
+
+  
