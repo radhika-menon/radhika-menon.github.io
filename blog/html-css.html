@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title> HTML-CSS blogpost </title>
     <meta charset="UTF-8">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
-  </head>
-  
-  <body>
-    <div id="heading-bar"><h1>Radhika's Dev Academy Journey</h1></div>
-    <div class="nav-bar">
-    <div class="nav-menu"><a class="nav-menu" href="../index.html">Home</a></div>
-    <div class="nav-menu"><a class="nav-menu" href="tech-blog-homepage.html">Technical blogs</a></div>
-    <div class="nav-menu"><a class="nav-menu" href="cultural-blog-homepage.html">Cultural blogs</a></div>
-  </div>
+</head>
 
-  <div class="main-page"><h2>Topic: HTML - CSS</h2>
-    <h3>What does it mean to display inline vs inline blocks?</h3>
-    <p>
-        CSS encloses every HTML element inside a box. This is known as the CSS box model. There are two types of boxes - <strong>inline</strong> and <strong>block</strong>, with each having different rules for how they stack up. Let´s begin with a paragraph element, which is by default an inline box.
-  </div>
-  </body>
+<body>
+    <div id="heading-bar">
+        <h1>Radhika's Dev Academy Journey</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-menu"><a class="nav-menu" href="../index.html">Home</a></div>
+        <div class="nav-menu"><a class="nav-menu" href="tech-blog-homepage.html">Technical blogs</a></div>
+        <div class="nav-menu"><a class="nav-menu" href="cultural-blog-homepage.html">Cultural blogs</a></div>
+    </div>
+
+    <div class="main-page">
+        <h2>Topic: HTML - CSS</h2>
+        <h3>What does it mean to display inline vs inline blocks?</h3>
+        <p>
+            CSS encloses every HTML element inside a box. This is known as the CSS box model. There are different types
+            of boxes, based on the CSS rules for stacking them up. The ability to change the height and margins around the boxes also varies. 
+            Therefore, the display and flow of a webpage depends on the type of the boxes. </p>
+            <p>By default, CSS has assigned different elements to one of 2 box types - <strong><em>Inline</em></strong> and <strong><em>Block</em></strong>.
+            The CSS style <strong>display</strong> can be used to change the box type.</p>
+            <p>Let's look at an HTML code snippet where a span element is placed within a paragraph element. By default, the span element is an inline box.</p>
+            </p>
+            <div>
+                <figure class="demo-figures">
+                    <img src="../img/HTML-span-example.png" alt"HTML code showing a span element inside a paragraph element">
+                    <figcaption>HTML code showing span element inside paragraph element</figcaption>
+                </figure>
+                </div>
+            <p>The CSS style is shown below. Notice that a height and margin is set for the span element.</p>
+            <div>
+                <figure class="demo-figures">
+                    <img src="../img/CSS-span-example.png" alt"CSS style declarations for the paragraph and span elements">
+                    <figcaption>CSS style declarations for the paragraph and span elements</figcaption>
+                </figure>
+                </div>    
+            <p>The result is as shown below. There is no line break before displaying the span element box. Furthermore, the height and margin styles have not been applied.</p>
+
+                <div>
+                <figure class="demo-figures">
+                    <img src="../img/result-span-inline.png" alt"Webpage display for the span element as an inline box">
+                    <figcaption>Webpage display for the span element as an inline box</figcaption>
+                </figure>
+                </div>   
+
+            <p>If we now change the display style to block, a line break will be added before and after displaying the span element. While an inline box does not allow the height and margin to be modified, the block box does, as seen below.</p>
+            <div>
+                <figure class="demo-figures">
+                    <img src="../img/result-span-block.png" alt"Webpage display for the span element as a block box">
+                    <figcaption>Webpage display for the span element as a block box</figcaption>
+                </figure>
+                </div>   
+            
+            <p>In order to display block elements in-line with other elements, i.e., without forcing line breaks, while at the same time being able to control the height and margin properties, 
+                a third display type called inline-block can be used. The result would be as follows. Notice that line breaks have not been forced to place with span element withing this paragraph. 
+                Also notice that the margin of 30px has now been applied to the whole line within which the span element exists.</p>
+            <div>
+                <figure class="demo-figures">
+                    <img src="../img/result-span-inline-block-wide.png" alt"Webpage display for the span element as an inline-block box">
+                    
+                    <figcaption>Webpage display for the span element as an inline-block box</figcaption>
+                </figure>
+                </div>   
+
+                <p>
+                    In summary,
+                    <ul>
+                        <li>Inline boxes do not force line breaks while block boxes do, which means inline boxes stack side by side, while block boxes stack one below the other.</li>
+                        <li>The height, width and margins of block boxes can be modified, but not those of inline boxes. </li>
+                        <li>Inline-block boxes combine the above two properties and allow boxes to be stacked horizontally, and the height, width and margins to be modified.</li>
+                    </ul> 
+                </p>
+                
+    </div>
+</body>
+
 </html>
