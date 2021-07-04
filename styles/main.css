@@ -55,6 +55,7 @@ body{
   }
 
 .post-buttons{
+  display:inline-block;
   margin:5%;
 } 
 
@@ -92,6 +93,15 @@ body{
   margin:auto;
 }
 
+.question{
+  color: #dd5281  ;
+  font-style: italic;
+  font-weight: bold;
+}
+
+td,th,tr{
+  padding:10px;
+}
 
 
   
