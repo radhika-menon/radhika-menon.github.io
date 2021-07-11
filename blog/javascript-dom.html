@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HTML-CSS blogpost </title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="heading-bar">
+        <h1>Radhika's Dev Academy Journey</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-menu"><a class="nav-menu" href="../index.html">Home</a></div>
+        <div class="nav-menu"><a class="nav-menu" href="tech-blog-homepage.html">Technical blogs</a></div>
+        <div class="nav-menu"><a class="nav-menu" href="cultural-blog-homepage.html">Cultural blogs</a></div>
+    </div>
+
+    <div class="main-page">
+        <h2>Topic: Javascript and the DOM</h2>
+
+        <p class="question">Describe the differences between HTML and CSS using an analogy</p>
+        <p>A web page is essentially a document. HTML (Hyper Text Markup Language) is the language you use to provide
+            your content, structured in a particular
+            manner, on a web page. CSS (Cascading Style Sheets) is the technology that
+            enables you to format all that content and present it as a visually appealing product. Let's use the analogy
+            of a dessert. </p>
+        <p>If you only had a HTML document with no styling by CSS, you would know the dessert comprises
+            of 30g vanilla ice cream, 10g chocolate ganache and 15g raspberries, and it would be dished up on a white
+            plate with each item placed one below the other. </p>
+        <p>Now consider plating your dessert creatively. Perhaps you
+            could use a stoneware blue plate, place 10 dots of ganache to form a circular border and within that arrange
+            the raspberries in a spiral form. Finally, finish off with the dollop of ice cream in the centre of the
+            plate.
+            These details which enhance the
+            beauty of your dessert are what would be specified in your CSS file.</p>
+        <p class="question">Explain control flow and loops using an example process from everyday life</p>
+        <p>Say you want to put on your jacket. This activity is a process and has a series of sub-tasks. Control flow
+            is the order in which you are going to perform this activity, and is as follows:
+        <ol>
+            <li>Lift jacket up by the collar with your left hand.</li>
+            <li>Insert right arm into the right sleeve.</li>
+            <li>Grasp collar with right hand.</li>
+            <li>Release left hand from collar.</li>
+            <li>Insert left arm into left sleeve.</li>
+            <li><strong><em>If jacket has a zip</em></strong>, then go to sub-task #7, <strong><em>else if jacket has
+                        buttons</em></strong>, then go directly to sub-task #8.</li>
+            <li>Do the following for zipping up a jacket:
+                <ol class="small-roman">
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ol>
+            </li>
+            <li><strong><em>For each button</em></strong>, do the following:
+                <ol class="small-roman">
+                    <li>...</li>
+                    <li>...</li>
+                </ol>
+            </li>
+        </ol>
+
+
+        The computer is instructed to perform an activity in a similar manner. It is given a series of instructions,
+        i.e., the code, and it executes each line in the code sequentially, unless it comes across certain coniditions.
+        For instance, if it encounters an <strong>if-else condition<em></em></strong>, such as the case of the jacket
+        having a zip or buttons, it would skip over some code and execute only the required lines.
+        </p>
+        <p>Another scenario is a loop, i.e., there may be sub-tasks which have to be repeated until some condition is
+            met. In our example above, you are provided a set of steps to fasten a button and these steps must be
+            repeated until every button has been fastened. A <strong><em>for loop</em></strong> has been used in this
+            case. </p>
+        <p class="question">Describe what the DOM is and an example of how you might interact with it</p>
+        <p>The DOM stands for Document Object model and is the interface for programming languages to interact and
+            manipulate a web page. Here, we consider we have an HTML document and want to use Javascript as the
+            programming language to change the document's content, structure and style dynamically.</p>
+        <p> The DOM represents the HTML document as a hierarchy of objects. Therefore, the properties and methods of the
+            objects can be accessed and modified using pre-defined functions called APIs.</p>
+        <p>For instance, the whole HTML document is represented by an object called <strong>document</strong> which has
+            a method called <strong>getElementsByClassName</strong>. If the name of a class is provided as input to this
+            API, it will output all the child elements of the <strong>document</strong> object which belong to that class. If the class name is "blue", we can call:</p>
+            <p><strong>var blueElements = document.getElementsByClassName('blue')</strong></p>
+        <p class="question">Explain the difference between accessing data from arrays and objects</p>
+        <p>
+        <h4><em>Arrays</em></h4>The items in an array are indexed and square brackets can be used to access each element
+        using
+        the format
+        <strong>arrayName[index]</strong>. It must be noted that array indexing starts at 0.</p>
+        <p>For example, consider an array named studentScores containing the scores received by 5 students for a
+            course.</p>
+        <p><strong>var studentScores = [80, 76, 54, 68, 86] </strong></p>
+        <p>The first and third students' scores are 80 and 54, respectively, and can be accessed using indices 0 and
+            2, as follows:</p>
+        <p><strong>var firstStudentScore = studentScores[0]</strong></p>
+        <p><strong>var thirdStudentScore = studentScores[2]</strong></p>
+        <h4><em>Objects</em></h4>
+        <p>An object is created with a set of properties in a key-value format. Consider an object called course1 with
+            two properties, courseID and finalScores. </p>
+        <p><strong>var course1 = {courseID: "ABC2021", finalScores: studentScores}</strong></p>
+        <em>courseID</em> and <em>finalScores</em> are the keys, and their corresponding values are <em>ABC2021</em> and
+        the array we created earlier,
+        <em>studentScores</em>, respectively. Using <strong>objectName.key</strong>, you can retrieve the values
+        associated with those keys.</p>
+        <p>For example, <strong>course1.finalScores</strong> will return the array of scores [80, 76, 54, 68, 86] as the
+            output.
+            To directly access the 4th student's score from the course1 object, you can use
+            <strong>course1.finalsScores[3]</strong> to
+            return the value 68.
+        </p>
+        <p class="question">Explain what functions are and why they are useful</p>
+        <p>A function is a set of statements, which takes some input parameters, performs some actions using those
+            parameters, and finally may return an output. Functions are useful when the same sub-task needs to
+            be executed, but with different values for the input parameter.</p>
+        <p>For instance, let's go back to our dessert made of ice cream, ganache and raspberries.
+            You know the proportion of the ingredients to make 1 serving. If you want to scale up the recipe for
+            multiple servings,
+            you can write a function, which takes as input an object that contains the amount of ingredients for 1
+            serving and the number of people.
+        <p>
+
+        <p><strong>function ingredientAmount(dessertObject, noOfPeople){/***do some calculations here ***/ return
+                output;}</strong></p>
+        <p><strong>var fancyDessert = {icecream : 30, ganache : 10, raspberries : 15}</strong></p>
+        <p> If you have 4 guests for whom you are preparing this dessert, you can call the function and retrieve the
+            calculated amounts in an output variable as follows:</p>
+        <p><strong>var outputObject = ingredientAmount(fancyDessert,4)</strong></p>
+        <p>If you want to make another dessert recipe, and this time for 10 people, you can simply call
+            your function as follows to return the calculated amounts of ingredients you require:
+        </p>
+        <p><strong>var outputObject = ingredientAmount(anotherFancyDessert,10)</strong></p>
+
+
+    </div>
+</body>
+
+</html>
