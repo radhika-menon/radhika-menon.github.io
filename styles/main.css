@@ -64,8 +64,9 @@ body{
     display: inline-block;
     background-color: #dd5281;
     padding:1%;
-    margin-left:auto;
-    margin-right:auto;
+    margin:1%;
+    /*margin-left:auto;
+    margin-right:auto;*/
     width: 40%;
     text-align: center;
     
